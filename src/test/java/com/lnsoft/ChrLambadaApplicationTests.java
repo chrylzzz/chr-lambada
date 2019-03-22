@@ -23,17 +23,23 @@ public class ChrLambadaApplicationTests {
 
         List<Integer> ids = new ArrayList<>();
         ids.add(1);
-        ids.add(2);
+        ids.add(4);
         ids.add(5);
-        ids.add(6);
+        ids.add(8);
+        ids.add(12);
+        ids.add(14);
+        ids.add(15);
+        ids.add(16);
+        ids.add(17);
+        ids.add(20);
 
 //        List<UserInfo> userInfoList = testLambada.getUserInfoById(ids);
         List<UserInfo> userInfoList = testLambada.getUserInfo(
-                u -> u.getName().equals("张三"),
+                u -> u.getName().contains("n") && u.getId() == 8,
                 ids
         );
         for (UserInfo userInfo : userInfoList) {
-            System.out.println(userInfo.getName());
+            System.out.println("\t" + userInfo.getName());
         }
     }
 

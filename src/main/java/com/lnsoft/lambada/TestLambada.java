@@ -8,8 +8,10 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 /**
+ * 下面三个方法的效果一样
  * Created By Chr on 2019/3/22/0022.
  */
 @Component
@@ -42,5 +44,11 @@ public class TestLambada {
         return userInfoList;
     }
 
+    //stream进行过滤
+    public List<UserInfo> getUserInfoByStream(Predicate<UserInfo> predicate, List<Integer> ids) {
+        List<UserInfo> allById = userDao.findAll(ids);
+        List<UserInfo> collect = allById.stream().filter(predicate).collect(Collectors.toList());
+        return collect;
+    }
 
 }

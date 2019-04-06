@@ -54,7 +54,4 @@ public class MyFunctionTest {
         i.sayHello("Chr", "thanks~");
     }
 
-    //========================
-
-
 }

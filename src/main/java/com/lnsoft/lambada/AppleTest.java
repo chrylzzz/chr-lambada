@@ -20,11 +20,19 @@ public class AppleTest {
         Apple apple2
                 = new Apple("a2", "黑富士", new Date(2018, 4, 25), new BigDecimal(4), 16);
         Apple apple3
-                = new Apple("a3", "白富士", new Date(2018, 6, 21), new BigDecimal(3), 6);
+                = new Apple("a3", "白富士", new Date(2018, 6, 11), new BigDecimal(3), 6);
         Apple apple4
                 = new Apple("a4", "蓝富士", new Date(2018, 7, 20), new BigDecimal(7), 30);
         Apple apple5
-                = new Apple("a5", "绿富士", new Date(2018, 9, 22), new BigDecimal(6), 76);
+                = new Apple("a5", "绿富士", new Date(2018, 9, 13), new BigDecimal(6), 76);
+        Apple apple6
+                = new Apple("a6", "灰富士", new Date(2018, 5, 28), new BigDecimal(9), 76);
+        Apple apple7
+                = new Apple("a7", "粉富士", new Date(2018, 8, 4), new BigDecimal(3), 76);
+        Apple apple8
+                = new Apple("a8", "黄富士", new Date(2018, 3, 29), new BigDecimal(2), 76);
+        Apple apple9
+                = new Apple("a9", "橙富士", new Date(2018, 1, 16), new BigDecimal(7), 76);
 
 
         List<Apple> appleList = new ArrayList<>();

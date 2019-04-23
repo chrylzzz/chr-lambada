@@ -21,6 +21,16 @@ public class LambadaSortTest {
     @Resource
     private UserDao userDao;
 
+    public static void main(String args[]) {
+        new Comparator<String>() {
+
+            @Override
+            public int compare(String o1, String o2) {
+
+                return 0;
+            }
+        };
+    }
 
     //排序对比
     public void sortTest(List<Integer> ids) {
